@@ -29,6 +29,19 @@ module.exports = {
     '~plugins/buefy'
   ],
   /*
+  ** Modules
+  */
+  modules: [
+    '@nuxtjs/sitemap'
+  ],
+  /*
+  ** Customize sitemap.xml generation
+  */
+  sitemap: {
+    hostname: 'https://responsivectabuilder.com',
+    generate: true
+  },
+  /*
   ** Customize the progress bar color
   */
   loading: { color: '#1385E8' },

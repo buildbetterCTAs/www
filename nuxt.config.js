@@ -3,20 +3,35 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'responsivectabuilder-com',
+    title: 'Responsive CTA Builder',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+      { hid: 'description', name: 'description', content: 'Responsive CTA Builder' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      /* Favicons */
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      /* FontAwesome Icons for Bulma */
+      { rel: 'stylesheet', href: '//use.fontawesome.com/0135b4d647.css' }
     ]
   },
   /*
+  ** Styles
+  */
+  css: [
+    '@/assets/css/main.scss'
+  ],
+  /*
+  ** Plugins
+  */
+  plugins: [
+    '~plugins/buefy'
+  ],
+  /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: { color: '#1385E8' },
   /*
   ** Build configuration
   */

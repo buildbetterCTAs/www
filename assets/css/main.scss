@@ -1,0 +1,41 @@
+// Import Bulma Core
+@import "~bulma/sass/utilities/_all";
+
+// Brand Colors
+$yale: #0E589A;
+$yale-invert: findColorInvert($yale);
+
+$dodger: #1385E8;
+$dodger-invert: findColorInvert($dodger);
+
+$picton: #48A7F9;
+$picton-invert: findColorInvert($picton);
+
+// Set Bulma Colors
+$primary: $dodger;
+$primary-invert: findColorInvert($primary);
+
+// Setup Color Classes
+$colors: (
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, $light-invert),
+  "dark": ($dark, $dark-invert),
+  "primary": ($primary, $primary-invert),
+  "info": ($info, $info-invert),
+  "success": ($success, $success-invert),
+  "warning": ($warning, $warning-invert),
+  "danger": ($danger, $danger-invert),
+  "yale": ($yale, $yale-invert),
+  "dodger": ($dodger, $dodger-invert),
+  "picton": ($picton, $picton-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma & Buefy
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

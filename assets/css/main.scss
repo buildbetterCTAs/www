@@ -11,6 +11,9 @@ $dodger-invert: findColorInvert($dodger);
 $picton: #48A7F9;
 $picton-invert: findColorInvert($picton);
 
+$awesome: #ff1744;
+$awesome-invert: findColorInvert($awesome);
+
 // Set Bulma Colors
 $primary: $dodger;
 $primary-invert: findColorInvert($primary);
@@ -28,8 +31,14 @@ $colors: (
   "danger": ($danger, $danger-invert),
   "yale": ($yale, $yale-invert),
   "dodger": ($dodger, $dodger-invert),
-  "picton": ($picton, $picton-invert)
+  "picton": ($picton, $picton-invert),
+  "awesome": ($awesome, $awesome-invert)
 );
+
+// Grid
+$grid: 1136px;
+$widescreen: $grid;
+$fullhd: $grid;
 
 // Links
 $link: $primary;
@@ -39,3 +48,88 @@ $link-focus-border: $primary;
 // Import Bulma & Buefy
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
+
+//*********
+// APP.VUE
+//*********
+
+.title {
+  strong {
+    color: $text-strong;
+  }
+}
+
+.subtitle {
+  color: $text;
+}
+
+.nav {
+  background-color: transparent;
+}
+
+.features {
+  .feature-block {
+    padding: 80px 0;
+
+    .container {
+      @media screen and (max-width: 1000px) {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+
+    &.block1 {
+      background-color: darken($white, 0%);
+    }
+
+    &.block2 {
+      background-color: darken($white, 2.5%);
+    }
+
+    &.block3 {
+      background-color: darken($white, 5%);
+    }
+
+    &.block4 {
+      background-color: darken($white, 7.5%);
+    }
+  }
+
+  .columns {
+    align-items: center;
+  }
+}
+
+.button {
+  &.is-attention {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11),  0 1px 3px rgba(0, 0, 0, .08);
+    transition: box-shadow .2s ease, background-color .2s ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0 7px 14px rgba(50, 50, 93, .1),  0 3px 6px rgba(0, 0, 0, .08);
+    }
+  }
+}
+
+.footer {
+  background-color: $white;
+  padding: 5rem 0;
+
+  .container {
+    @media screen and (max-width: 1000px) {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  .links {
+    margin-top: 24px;
+  }
+
+  .copyright {
+    margin-bottom: 32px;
+    margin-top: 16px;
+  }
+}

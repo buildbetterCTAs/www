@@ -1,8 +1,21 @@
 <template>
   <div>
     <nuxt/>
+    <footer class="footer">
+      <app-footer></app-footer>
+    </footer>
   </div>
 </template>
+
+<script>
+  import appFooter from '~/components/footer'
+
+  export default {
+    components: {
+      'app-footer': appFooter
+    }
+  }
+</script>
 
 <style>
 html {

@@ -43,8 +43,7 @@ module.exports = {
   ** Plugins
   */
   plugins: [
-    '~plugins/buefy',
-    { src: '~plugins/vue-range-slider', ssr: false }
+    '~plugins/buefy'
   ],
   /*
   ** Modules

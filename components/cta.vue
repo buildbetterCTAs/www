@@ -11,13 +11,15 @@
     </div>
     <!-- SLIDER -->
     <div class="width-slider">
-      <Slider v-model="width" min="300" max="1000"></Slider>
+      <no-ssr>
+        <slider v-model="width" min="300" max="1000" />
+      </no-ssr>
     </div>
   </div>
 </template>
 
 <script>
-  import slider from '~/plugins/vue-range-slider'
+  import slider from 'vue-range-slider'
 
   export default {
     name: 'cta',

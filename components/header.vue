@@ -7,7 +7,7 @@
         </nuxt-link>
       </div>
       <div class="nav-right">
-        <nuxt-link to="/#features" class="nav-item is-hidden-mobile">Features</nuxt-link>
+        <a href="/#features" class="nav-item is-hidden-mobile">Features</a>
         <!-- <nuxt-link to="docs" class="nav-item is-hidden-mobile">Documentation</nuxt-link> -->
         <nuxt-link to="blog" class="nav-item is-hidden-mobile">Blog</nuxt-link>
         <div class="nav-item is-hidden-mobile">

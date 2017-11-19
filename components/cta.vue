@@ -5,7 +5,7 @@
         <div class="rcta_embed" style="border-radius: 4px; background-color: #0E589A;">
           <div class="rcta_headline" style="color: #ffffff;">This is a powerful, eye-catching headline</div>
           <div class="rcta_description" style="color: #ffffff;">This is your secondary text that might explain why your reader should follow your call-to-action.</div>
-          <div><a class="rcta_button" href="https://www.responsivectabuilder.com" target="_blank" style="background-color: #48A7F9; color: #ffffff">click here, reader!</a></div>
+          <div><nuxt-link class="rcta_button" to="/" style="background-color: #48A7F9; color: #ffffff">click here, reader!</nuxt-link></div>
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@
 
 <style lang="sass">
 
-@import "~assets/css/main"
+@import "~assets/css/brand"
 
 //******************
 // UTILITY WRAPPERS
@@ -121,10 +121,7 @@ $knob-shadow-hover: 0 7px 14px rgba(50, 50, 93, .1),  0 3px 6px rgba(0, 0, 0, .0
 // CTA EMBED STYLES
 //******************
 
-@import "~cta.css"
-
-
-.cta
+.rcta_embed
   transition: padding .2s ease, font-size .2s ease
 
 //******************
@@ -138,7 +135,7 @@ $knob-shadow-hover: 0 7px 14px rgba(50, 50, 93, .1),  0 3px 6px rgba(0, 0, 0, .0
 .small,
 .smaller,
 .tiny
-  .ctaImage
+  .rcta_image
     display: none
 
 // Medium & Down
@@ -146,13 +143,13 @@ $knob-shadow-hover: 0 7px 14px rgba(50, 50, 93, .1),  0 3px 6px rgba(0, 0, 0, .0
 .small,
 .smaller,
 .tiny
-  .cta
+  .rcta_embed
     padding: 40px
 
-  .ctaHeadline
+  .rcta_headline
     font-size: 36px
 
-  .ctaButton
+  .rcta_button
     height: 54px
     line-height: 54px
     margin-top: 8px
@@ -161,13 +158,13 @@ $knob-shadow-hover: 0 7px 14px rgba(50, 50, 93, .1),  0 3px 6px rgba(0, 0, 0, .0
 .small,
 .smaller,
 .tiny
-  .cta
+  .rcta_embed
     padding: 32px
 
-  .ctaHeadline
+  .rcta_headline
     font-size: 30px
 
-  .ctaButton
+  .rcta_button
     height: auto
     line-height: 2
     padding: 8px
@@ -177,21 +174,21 @@ $knob-shadow-hover: 0 7px 14px rgba(50, 50, 93, .1),  0 3px 6px rgba(0, 0, 0, .0
 // Smaller & Down
 .smaller,
 .tiny
-  .cta
+  .rcta_embed
     padding: 24px
 
-  .ctaHeadline
+  .rcta_headline
     font-size: 28px
 
-  .ctaDescription
+  .rcta_description
     font-size: 18px
 
 // Tiny & Down
 .tiny
-  .cta
+  .rcta_embed
     padding: 16px
 
-  .ctaHeadline
+  .rcta_headline
     font-size: 24px
 // sass-lint:enable class-name-format
 

@@ -1,22 +1,7 @@
 // Import Bulma Core
 @import "~bulma/sass/utilities/_all";
 
-// Brand Colors
-$yale: #0E589A;
-$yale-invert: findColorInvert($yale);
-
-$dodger: #1385E8;
-$dodger-invert: findColorInvert($dodger);
-
-$picton: #48A7F9;
-$picton-invert: findColorInvert($picton);
-
-$awesome: #ff1744;
-$awesome-invert: findColorInvert($awesome);
-
-// Set Bulma Colors
-$primary: $dodger;
-$primary-invert: findColorInvert($primary);
+@import "brand";
 
 // Setup Color Classes
 $colors: (
@@ -32,7 +17,6 @@ $colors: (
   "yale": ($yale, $yale-invert),
   "dodger": ($dodger, $dodger-invert),
   "picton": ($picton, $picton-invert),
-  "awesome": ($awesome, $awesome-invert)
 );
 
 // Grid
@@ -71,13 +55,6 @@ $link-focus-border: $primary;
   .feature-block {
     padding: 80px 0;
 
-    .container {
-      @media screen and (max-width: 1000px) {
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-    }
-
     &.block1 {
       background-color: darken($white, 0%);
     }
@@ -115,21 +92,22 @@ $link-focus-border: $primary;
 
 .footer {
   background-color: $white;
-  padding: 5rem 0;
+}
 
+.hero-head {
+  .container.hero-text {
+    margin-top: 80px;
+    max-width: 800px;
+  }
+}
+
+.hero-head,
+.feature-block,
+.footer {
   .container {
     @media screen and (max-width: 1000px) {
       margin-left: 20px;
       margin-right: 20px;
     }
-  }
-
-  .links {
-    margin-top: 24px;
-  }
-
-  .copyright {
-    margin-bottom: 32px;
-    margin-top: 16px;
   }
 }

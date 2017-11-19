@@ -1,19 +1,7 @@
 // Import Bulma Core
 @import "~bulma/sass/utilities/_all";
 
-// Brand Colors
-$yale: #0E589A;
-$yale-invert: findColorInvert($yale);
-
-$dodger: #1385E8;
-$dodger-invert: findColorInvert($dodger);
-
-$picton: #48A7F9;
-$picton-invert: findColorInvert($picton);
-
-// Set Bulma Colors
-$primary: $dodger;
-$primary-invert: findColorInvert($primary);
+@import "brand";
 
 // Setup Color Classes
 $colors: (
@@ -104,6 +92,13 @@ $link-focus-border: $primary;
 
 .footer {
   background-color: $white;
+}
+
+.hero-head {
+  .container.hero-text {
+    margin-top: 80px;
+    max-width: 800px;
+  }
 }
 
 .hero-head,

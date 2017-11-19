@@ -46,8 +46,8 @@
       margin-top: 40px
 
     .content
-      max-width: 800px
-      margin: 0 auto
+      &.container
+        max-width: 800px
 
       img
         width: 100%

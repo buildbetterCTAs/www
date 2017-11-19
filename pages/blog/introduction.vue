@@ -1,7 +1,7 @@
 <template>
-  <div class="container">
+  <div>
     <section>
-      <div class="content">
+      <div class="content container">
         <h1>Why We Built Responsive CTA Builder</h1>
         <p>About a year ago, Jeff Reiner and I made a discovery. The calls-to-action (CTAs) on our company’s blog weren’t performing as well as they could.</p>
         <p>Jeff had spent almost a month redesigning our company’s blog. It was beautiful. We reviewed dozens of blogs and publications that we loved – from tech companies to major newspapers. Then Jeff designed a new blog layout to include only the essentials. We wanted to remove any distractions from our written content.</p>

@@ -7,14 +7,12 @@
         <div class="hero-head">
           <app-header/>
           <!-- HEADLINE -->
-          <section>
-            <div class="container">
-              <div class="has-text-centered" style="margin-top: 80px;">
-                <h1 class="title is-spaced is-2 dodger-text">Build better calls-to-action</h1>
-                <h2 class="subtitle">Responsive CTA Builder helps marketers build responsive calls-to-action which will convert more traffic into visitors than your current bitmap image call-to-action. Give it a try, for free.</h2>
-              </div>
+          <div class="container hero-text">
+            <div class="has-text-centered">
+              <h1 class="title is-spaced is-2">Build better calls-to-action</h1>
+              <h2 class="subtitle">Responsive CTA Builder helps marketers build responsive calls-to-action which will convert more traffic into visitors than your current bitmap image call-to-action. Give it a try, for free.</h2>
             </div>
-          </section>
+          </div>
         </div>
         <div class="hero-body">
           <div class="container">

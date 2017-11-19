@@ -78,7 +78,7 @@
 
 <style lang="sass">
 
-@import "~assets/css/main"
+@import "~assets/css/brand"
 
 //******************
 // UTILITY WRAPPERS

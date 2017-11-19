@@ -16,7 +16,7 @@
     "nuxt": "^1.0.0-rc11",
     "@nuxtjs/sitemap": "0.0.3",
     "buefy": "^0.5.3",
-    "cta.css": "^2.0.1",
+    "cta.css": "^2.0.2",
     "vue-range-slider": "^0.2.4"
   },
   "devDependencies": {

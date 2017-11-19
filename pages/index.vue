@@ -5,7 +5,7 @@
       <!-- INTRO SECTION -->
       <section class="hero is-fullheight">
         <div class="hero-head">
-          <app-header></app-header>
+          <app-header/>
           <!-- HEADLINE -->
           <section>
             <div class="container">
@@ -18,7 +18,7 @@
         </div>
         <div class="hero-body">
           <div class="container">
-            <cta></cta>
+            <cta/>
           </div>
         </div>
         <div class="hero-footer has-text-centered">
@@ -44,7 +44,7 @@
           <!-- ONE -->
           <div class="feature-block block1">
             <div class="container">
-              <div class="columns wow slideInLeft">
+              <div class="columns">
                 <div class="column">
                   <img src="~/assets/img/devices.svg">
                 </div>
@@ -59,7 +59,7 @@
           <!-- TWO -->
           <div class="feature-block block2">
             <div class="container">
-              <div class="columns wow slideInRight">
+              <div class="columns">
                 <div class="column">
                   <h4 class="title is-4"><strong>Proven better performance</strong></h4>
                   <p>Responsive CTAs are proven to perform better than image CTAs. We’ve seen <strong>2.5x more clicks</strong> on Responsive CTAs than Image CTAs.</p>
@@ -74,7 +74,7 @@
           <!-- THREE -->
           <div class="feature-block block3">
             <div class="container">
-              <div class="columns wow slideInLeft">
+              <div class="columns">
                 <div class="column">
                   <img src="~/assets/img/dashboard.svg">
                 </div>
@@ -89,7 +89,7 @@
           <!-- FOUR -->
           <div class="feature-block block4">
             <div class="container">
-              <div class="columns wow slideInRight">
+              <div class="columns">
                 <div class="column">
                   <h4 class="title is-4"><strong>Enhanced SEO benefits</strong></h4>
                   <p>Forget trying to fit your long tail keywords into your alt text for an image CTA. With Responsive CTAs just add your keywords into the header, secondary text or button text.</p>
@@ -108,7 +108,7 @@
               <div class="rcta_embed" style="border-radius: 4px; background-color: #1385E8;">
                 <div class="rcta_headline" style="color: #ffffff;">Ready to make a beautiful, responsive CTA?</div>
                 <div class="rcta_description" style="color: #ffffff;">Yes, it can look as good as this call-to-action AND match your company's branding guidelines.</div>
-                <a class="rcta_button" href="https://app.responsivectabuilder.com" target="_blank" style="background-color: #ff1744; color: #ffffff;">CREATE YOUR OWN CTA</a>
+                <a class="rcta_button" href="https://app.responsivectabuilder.com" target="_blank" style="background-color: #ff3860; color: #ffffff;">CREATE YOUR OWN CTA</a>
               </div>
               <!-- /CTA -->
             </div>
@@ -120,13 +120,11 @@
 </template>
 
 <script>
-  import Logo from '~/components/Logo.vue'
   import cta from '~/components/cta'
   import appHeader from '~/components/header'
 
   export default {
     components: {
-      Logo,
       cta,
       'app-header': appHeader
     }

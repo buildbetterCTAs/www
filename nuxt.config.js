@@ -37,7 +37,8 @@ module.exports = {
   ** Styles
   */
   css: [
-    '@/assets/css/main.scss'
+    '@/assets/css/main.scss',
+    'cta.css'
   ],
   /*
   ** Plugins
@@ -61,7 +62,7 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#1385E8' },
+  loading: { color: '#ff3860' },
   /*
   ** Build configuration
   */

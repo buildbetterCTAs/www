@@ -9,7 +9,7 @@
       <div class="nav-right">
         <a href="/#features" class="nav-item is-hidden-mobile">Features</a>
         <!-- <nuxt-link to="docs" class="nav-item is-hidden-mobile">Documentation</nuxt-link> -->
-        <nuxt-link to="blog" class="nav-item is-hidden-mobile">Blog</nuxt-link>
+        <nuxt-link to="/blog" class="nav-item is-hidden-mobile">Blog</nuxt-link>
         <div class="nav-item is-hidden-mobile">
           <div class="field is-grouped">
             <p class="control">
@@ -27,7 +27,7 @@
         <nuxt-link to="/" class="nav-item">Home</nuxt-link>
         <a href="/#features" class="nav-item">Features</a>
         <!-- <nuxt-link to="docs" class="nav-item">Documentation</nuxt-link> -->
-        <nuxt-link to="blog" class="nav-item">Blog</nuxt-link>
+        <nuxt-link to="/blog" class="nav-item">Blog</nuxt-link>
       </div>
     </div>
   </nav>

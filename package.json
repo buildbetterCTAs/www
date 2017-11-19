@@ -13,10 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "nuxt": "^1.0.0-rc11",
     "@nuxtjs/sitemap": "0.0.3",
     "buefy": "^0.5.3",
     "cta.css": "^2.0.1",
-    "nuxt": "^1.0.0-rc11",
     "vue-range-slider": "^0.2.4"
   },
   "devDependencies": {

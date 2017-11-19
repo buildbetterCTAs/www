@@ -4,16 +4,18 @@
       <article class="post container">
         <div class="date">November 26th, 2017</div>
         <h1 class="title">Why We Built Responsive CTA Builder</h1>
-        <author :name="name" :title="title" :image="image" />
+        <author :name="name" :title="title">
+          <img src="~/assets/img/daniel.png" :alt="name"/>
+        </author>
         <div class="content">
           <p>About a year ago, Jeff Reiner and I made a discovery. The calls-to-action (CTAs) on our company’s blog weren’t performing as well as they could.</p>
           <p>Jeff had spent almost a month redesigning our company’s blog. It was beautiful. We reviewed dozens of blogs and publications that we loved – from tech companies to major newspapers. Then Jeff designed a new blog layout to include only the essentials. We wanted to remove any distractions from our written content.</p>
           <p>But we had a problem. Our CTAs looked horrible on mobile devices. On top of that, they rendered funny which ruined our beautiful aesthetic.</p>
           <p>That really irked us. We followed the same practices that HubSpot or any other inbound marketing blog uses today. We built images in photoshop, with background textures, graphics of eBooks, big headlines, and little buttons to give the impression that readers should click to follow our call-to-action.</p>
           <p>But the problem with this is that the images with text are hard to read on mobile devices. Here’s a couple examples of CTA’s on HubSpot’s blog:</p>
-          <img style="max-width: 600px;" src="~/assets/img/intro-blog-hubspot-cta.png">
+          <img style="max-width: 600px;" src="~/assets/img/intro-blog-hubspot-cta.png"/>
           <p>And here’s how they look on mobile devices: </p>
-          <img style="max-width: 400px;" src="~/assets/img/intro-blog-hubspot-cta-mobile.jpg">
+          <img style="max-width: 400px;" src="~/assets/img/intro-blog-hubspot-cta-mobile.jpg"/>
           <p>Not only do they look bad, but they also don’t perform well. That’s probably because they feel like a web banner ad, not a legitimate, inbound call-to-action.</p>
           <p>So we decided to fix this issue. Jeff, a brilliant problem solver, said “I have an idea.” About five minutes later, Jeff showed me our first responsive CTA.</p>
           <h2>What’s a responsive CTA?</h2>
@@ -22,7 +24,7 @@
           <div class="rcta_embed" style="font-family: 'Work Sans', sans-serif; border-radius: 4px; background-color: #3177B5;">
               <div class="rcta_columns">
                   <div class="rcta_column rcta_image">
-                      <img src="https://blog.hubspot.com/hs-fs/hubfs/00-Blog-Related_Images/SMART_Goals_Excel_Templates.png" alt="I am a placeholder image">
+                      <img src="https://blog.hubspot.com/hs-fs/hubfs/00-Blog-Related_Images/SMART_Goals_Excel_Templates.png" alt="I am a placeholder image"/>
                   </div>
                   <div class="rcta_column">
                       <div class="rcta_headline" style="color: #ffffff;">Free Marketing and Goal Setting Template</div>
@@ -37,7 +39,7 @@
           <p>It makes sense, doesn’t it? A more readable call-to-action gets visitors to take action.
           71% of marketers believe mobile marketing is core to their business
           That stat comes from a Salesforce “State of Marketing” report in 2015. Making your website mobile friendly is a mandate, not a luxury.</p>
-          <img src="~/assets/img/intro-blog-mobile.png">
+          <img src="~/assets/img/intro-blog-mobile.png"/>
           <h2>Use on your blog, web pages, landing pages…</h2>
           <p>Responsive CTAs are great for your blog, but they are useful in other areas of your website too. For instance, if your website has a long scrolling feature or product tour, a responsive CTA would work great as your bottom call-to-action. Did you see <nuxt-link to="/">our homepage</nuxt-link>?</p>
           <p>We’ve been in private beta with about a dozen accounts using Responsive CTA Builder. So far our users are excited by this tool and using it on their blogs, websites and landing pages.</p>
@@ -61,8 +63,7 @@
     data () {
       return {
         name: 'Daniel J. Murphy',
-        title: 'Co-Founder',
-        image: '//placehold.it/100x100'
+        title: 'Co-Founder'
       }
     },
     head () {

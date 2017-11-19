@@ -1,8 +1,6 @@
 <template>
   <div class="author">
-    <div class="image">
-      <img :src="image" :alt="name" />
-    </div>
+    <slot/>
     <div class="info">
       <p v-text="name"></p>
       <p v-text="title"></p>
@@ -13,7 +11,6 @@
 <script>
   export default {
     props: {
-      image: String,
       name: String,
       title: String
     }
@@ -25,13 +22,11 @@
     display: flex
     margin: 1.5rem 0
 
-    .image
+    img
       margin-right: 16px
-
-      img
-        border-radius: 50px
-        height: 50px
-        width: 50px
+      border-radius: 50px
+      height: 50px
+      width: 50px
 
     .info
       p:first-child

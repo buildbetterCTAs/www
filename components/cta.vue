@@ -23,14 +23,14 @@
 
   export default {
     name: 'cta',
-    data: function () {
+    data () {
       return {
         width: 1000,
         displayElementWidth: 0
       }
     },
     computed: {
-      responsiveClass: function () {
+      responsiveClass () {
         const mediumLargeScreen = 800
         const mediumScreen = 768
         const smallScreen = 600
@@ -55,18 +55,18 @@
       }
     },
     methods: {
-      calcWidth: function () {
+      calcWidth () {
         this.displayElementWidth = document.getElementsByClassName('cta-with-slider')[0].clientWidth
       }
     },
-    mounted: function () {
+    mounted () {
       this.calcWidth()
       window.addEventListener('resize', () => {
         this.calcWidth()
       })
     },
     watch: {
-      width: function () {
+      width () {
         this.calcWidth()
       }
     },

@@ -46,9 +46,6 @@
     meta: {
       title: 'Documentation'
     },
-    data: function () {
-      return {}
-    },
     components: {
       'app-header': appHeader,
       banner

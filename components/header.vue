@@ -36,13 +36,13 @@
 <script>
   export default {
     name: 'www-header',
-    data: function () {
+    data () {
       return {
         nav: false
       }
     },
     methods: {
-      toggleNav: function () {
+      toggleNav () {
         if (this.nav !== true) {
           this.nav = true
         } else {

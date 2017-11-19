@@ -8,7 +8,7 @@
     <!-- MAIN -->
     <main>
       <banner>
-        <p slot="title" class="title"><nuxt-link to="/blog">The Build Better CTAs Blog</nuxt-link></p>
+        <h1 slot="title" class="title"><nuxt-link to="/blog">The Build Better CTAs Blog</nuxt-link></h1>
       </banner>
       <nuxt class="blog"/>
     </main>
@@ -40,15 +40,27 @@
 </script>
 
 <style lang="sass">
+  .date
+    color: rgba(#000, .32)
+    margin-bottom: .75rem
+
+  .blog-listing
+    .title
+      margin-bottom: .5rem
+
+    h2,
+    p
+      margin-bottom: .75rem
+
   .blog
     section
       padding: 0 1.5rem
       margin-top: 40px
 
-    .content
-      &.container
-        max-width: 800px
+    .post.container
+      max-width: 800px
 
+    .content
       img
         width: 100%
         display: block

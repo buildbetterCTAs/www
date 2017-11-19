@@ -121,6 +121,7 @@ $knob-shadow-hover: 0 7px 14px rgba(50, 50, 93, .1),  0 3px 6px rgba(0, 0, 0, .0
 // CTA EMBED STYLES
 //******************
 
+// sass-lint:disable class-name-format
 .rcta_embed
   transition: padding .2s ease, font-size .2s ease
 
@@ -128,15 +129,15 @@ $knob-shadow-hover: 0 7px 14px rgba(50, 50, 93, .1),  0 3px 6px rgba(0, 0, 0, .0
 // JS MEDIA QUERIES
 //******************
 
-// sass-lint:disable class-name-format
 // Medium-Large & Down
 .mediumLarge,
 .medium,
 .small,
 .smaller,
 .tiny
-  .rcta_image
-    display: none
+  .rcta_column
+    &.rcta_image
+      display: none
 
 // Medium & Down
 .medium,

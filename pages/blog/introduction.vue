@@ -56,7 +56,7 @@
   import author from '~/components/author'
   export default {
     layout: 'blog',
-    name: 'introduction',
+    name: 'introducing-responsive-cta-builder',
     components: {
       author
     },

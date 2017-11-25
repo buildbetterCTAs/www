@@ -3,7 +3,7 @@
     <!-- HEADER -->
     <header>
       <!-- INTRO SECTION -->
-      <section class="hero is-fullheight">
+      <section class="hero">
         <div class="hero-head">
           <app-header/>
           <!-- HEADLINE -->
@@ -14,7 +14,7 @@
             </div>
           </div>
         </div>
-        <div class="hero-body">
+        <div class="hero-body cta">
           <div class="container">
             <cta/>
           </div>
@@ -128,3 +128,12 @@
     }
   }
 </script>
+
+<style lang="sass">
+  .hero-body.cta
+    @media only screen and (min-width: 1024px)
+      min-height: 600px
+      padding: 6rem 1.5rem
+
+
+</style>

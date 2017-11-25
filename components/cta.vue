@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="cta-slider-wrapper">
     <div class="cta-with-slider" :style="{ maxWidth: width + 'px' }">
       <div :class="responsiveClass">
         <div class="rcta_embed" style="border-radius: 4px; background-color: #0E589A;">
@@ -84,8 +84,35 @@
 // UTILITY WRAPPERS
 //******************
 
+.cta-slider-wrapper
+  &:before,
+  &:after
+    position: absolute
+    content: ''
+
+    background-repeat: no-repeat
+    background-position: center
+
+    @media only screen and (max-width: 1024px)
+      display: none
+
+  &:before
+    height: 45px
+    width: 400px
+    right: 0
+    top: -55px
+    background-image: url('~/assets/img/looks-like-this.svg')
+
+  &:after
+    height: 80px
+    width: 380px
+    right: 40px
+    bottom: -80px
+    background-image: url('~/assets/img/try-dragging.svg')
+
 .cta-with-slider
   margin: 0 auto
+  position: relative
 
 .width-slider
   margin: 0 auto
@@ -93,6 +120,7 @@
 
   @media only screen and (max-width: 1024px)
     display: none
+
 
 //******************
 // VUE-RANGE-SLIDER

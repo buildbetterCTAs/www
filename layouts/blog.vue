@@ -17,6 +17,9 @@
     <footer class="footer">
       <app-footer/>
     </footer>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a1970c73bd3a9d9" async></script>
   </div>
 </template>
 

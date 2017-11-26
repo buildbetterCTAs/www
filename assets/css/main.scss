@@ -19,6 +19,16 @@ $colors: (
   "picton": ($picton, $picton-invert),
 );
 
+// Selection
+::selection {
+  background-color: rgba($picton, 1);
+  color: $white;
+}
+::-moz-selection {
+  background-color: rgba($picton, 1);
+  color: $white;
+}
+
 // Grid
 $grid: 1136px;
 $widescreen: $grid;

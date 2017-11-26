@@ -45,7 +45,7 @@
                 <div class="column">
                   <img src="~/assets/img/devices.svg">
                 </div>
-                <div class="column">
+                <div class="column column-lined column-lined_left">
                   <h4 class="title is-4"><strong>Works on all devices</strong></h4>
                   <p>Responsive CTAs make your call-to-action reader friendly on all devices: computers, tablets and mobile phones.</p>
                 </div>
@@ -59,7 +59,7 @@
                 <div class="column">
                   <img src="~/assets/img/clicks.svg">
                 </div>
-                <div class="column">
+                <div class="column column-lined">
                   <h4 class="title is-4"><strong>Proven better performance</strong></h4>
                   <p>Responsive CTAs are proven to perform better than image CTAs. We’ve seen <strong>2.5x more clicks</strong> on Responsive CTAs than Image CTAs.</p>
                 </div>
@@ -73,7 +73,7 @@
                 <div class="column">
                   <img src="~/assets/img/dashboard.svg">
                 </div>
-                <div class="column">
+                <div class="column column-lined column-lined_left">
                   <h4 class="title is-4"><strong>Works with HubSpot</strong></h4>
                   <p>You can link your HubSpot CTA tracking with our Responsive CTA Builder. Build beautiful Responsive CTAs but don’t lose any tracking or reporting capabilities.</p>
                 </div>
@@ -87,7 +87,7 @@
                 <div class="column">
                   <img src="~/assets/img/keyword.svg">
                 </div>
-                <div class="column">
+                <div class="column column-lined">
                   <h4 class="title is-4"><strong>Enhanced SEO benefits</strong></h4>
                   <p>Forget trying to fit your long tail keywords into your alt text for an image CTA. With Responsive CTAs just add your keywords into the header, secondary text or button text.</p>
                 </div>
@@ -131,20 +131,21 @@
   .hero-body.cta
     @media only screen and (min-width: 1024px)
       min-height: 600px
-      padding: 6rem 1.5rem
+      padding: 7rem 1.5rem
 
   .features
-    position: relative
+    @media only screen and (min-width: 1024px)
+      position: relative
 
-    &-lined
-      @media only screen and (min-width: 1024px)
+      &-lined
         &:before
           content: ''
           width: 2px
 
+          // background-color: $dodger
           background-image: linear-gradient($dodger 33%, rgba(white, 0) 0%)
           background-position: right
-          background-size: 2px 24px
+          background-size: 2px 16px
           background-repeat: repeat-y
 
           position: absolute
@@ -153,6 +154,31 @@
           z-index: 2
           right: 50%
           transform: translateX(50%)
+
+        .column
+          &-lined
+            position: relative
+
+            &:before
+              content: ''
+              height: 2px
+              width: 2.5rem
+
+              // background-color: $dodger
+              background-image: linear-gradient(to right, $dodger 33%, rgba(white, 0) 0%)
+              background-position: bottom
+              background-size: 16px 2px
+              background-repeat: repeat-x
+
+              position: absolute
+              right: 0
+              top: 50%
+              transform: translateY(50%)
+              z-index: 2
+
+            &_left
+              &:before
+                left: 0
 
     .feature-block
       padding: 80px 0
@@ -170,7 +196,7 @@
       align-items: center
 
       @media only screen and (min-width: 1024px)
-        $columnPadding: 2.5rem
+        $columnPadding: 3rem
 
         .column
           &:first-child

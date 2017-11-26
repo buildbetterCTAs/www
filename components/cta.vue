@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="cta-slider-wrapper">
     <div class="cta-with-slider" :style="{ maxWidth: width + 'px' }">
       <div :class="responsiveClass">
         <div class="rcta_embed" style="border-radius: 4px; background-color: #0E589A;">
           <div class="rcta_headline" style="color: #ffffff;">This is a powerful, eye-catching headline</div>
           <div class="rcta_description" style="color: #ffffff;">This is your secondary text that might explain why your reader should follow your call-to-action.</div>
-          <div><nuxt-link class="rcta_button" to="/" style="background-color: #48A7F9; color: #ffffff">click here, reader!</nuxt-link></div>
+          <div><a class="rcta_button" style="background-color: #48A7F9; color: #ffffff">click here, reader!</a></div>
         </div>
       </div>
     </div>
@@ -84,8 +84,37 @@
 // UTILITY WRAPPERS
 //******************
 
+.cta-slider-wrapper
+  &:before,
+  &:after
+    position: absolute
+    content: ''
+
+    background-repeat: no-repeat
+    background-position: center
+
+    @media only screen and (max-width: 1024px)
+      display: none
+
+  &:before
+    background-image: url('~/assets/img/looks-like.svg')
+    width: 458.86px
+    height: 72.71px
+
+    right: 0
+    top: -85px
+
+  &:after
+    background-image: url('~/assets/img/try-dragging.svg')
+    width: 350.84px
+    height: 72.8px
+
+    right: 50px
+    bottom: -70px
+
 .cta-with-slider
   margin: 0 auto
+  position: relative
 
 .width-slider
   margin: 0 auto
@@ -93,6 +122,7 @@
 
   @media only screen and (max-width: 1024px)
     display: none
+
 
 //******************
 // VUE-RANGE-SLIDER

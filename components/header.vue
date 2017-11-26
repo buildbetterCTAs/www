@@ -13,7 +13,7 @@
         <div class="nav-item is-hidden-mobile">
           <div class="field is-grouped">
             <p class="control">
-              <a href="https://app.responsivectabuilder.com" class="button is-primary">Login</a>
+              <a rel="noopener" href="https://app.responsivectabuilder.com" class="button is-primary">Login</a>
             </p>
           </div>
         </div>

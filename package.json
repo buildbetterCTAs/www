@@ -13,23 +13,23 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0-rc11",
     "@nuxtjs/sitemap": "0.0.3",
-    "buefy": "^0.5.3",
+    "buefy": "^0.5.4",
     "cta.css": "^2.0.2",
+    "nuxt": "^1.4.0",
     "vue-range-slider": "^0.2.4"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^4.3.0",
+    "eslint": "^4.18.2",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.1.1",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6"
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7"
   }
 }

@@ -14,7 +14,7 @@ module.exports = {
       /* SEO */
       { property: 'og:title', content: 'Responsive CTA Builder' },
       { property: 'og:description', content: 'Build better calls-to-action.' },
-      { property: 'og:image', content: 'thumb.png' },
+      { property: 'og:image', content: 'https://responsivectabuilder.com/thumb.png' },
       { property: 'og:url', content: 'https://responsivectabuilder.com/' },
       { name: 'twitter:title', content: 'Responsive CTA Builder' },
       { name: 'twitter:description', content: 'Build better calls-to-action.' },

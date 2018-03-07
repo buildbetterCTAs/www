@@ -74,8 +74,8 @@
                   <img src="~/assets/img/dashboard.svg">
                 </div>
                 <div class="column column-lined column-lined_left">
-                  <h4 class="title is-4"><strong>Works with HubSpot</strong></h4>
-                  <p>You can link your HubSpot CTA tracking with our Responsive CTA Builder. Build beautiful Responsive CTAs but don’t lose any tracking or reporting capabilities.</p>
+                  <h4 class="title is-4"><strong>Works with HubSpot, Drift, & Google Analytics</strong></h4>
+                  <p>You can link your HubSpot CTA tracking, your Drift Playbook or Google Analytics event with a Responsive CTA. Build beautiful Responsive CTAs without losing any tracking or reporting capabilities.</p>
                 </div>
               </div>
             </div>
